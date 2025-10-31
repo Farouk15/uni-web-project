@@ -3,7 +3,77 @@ body{
     color: aliceblue;
     background-color: aliceblue;
     padding: 0;
+    background-color: #EED7FD;
+    
 }
 .nav-link{
     display: inline;
 }
+h2, p {
+  margin: 10px;
+}
+
+.ul-cls {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ul-cls > div:nth-child(2) {
+  display: flex;
+}
+
+nav ul li a {
+  display: block;
+  color: #460B60;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Poppins", "Inter", "Helvetica Neue", Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+  font-weight: 800;
+  font-size: 20px;
+}
+.uni-lo{
+    font-size: 53px;
+    color: #460B60;
+    font-weight: 800;
+
+
+}
+nav ul li a :hover{
+        text-decoration: none;
+    list-style: none;
+}
+.nav-di{
+    display: block;
+    justify-content: space-evenly;
+}
+.btn-style{
+  padding: 10px;
+  width: 100px;
+  padding-inline-start: 10px;
+  border-radius: 5px;
+  border-color: #EED7FD;
+  background-color: #BC5CF0;
+  color: white;
+}
+.img-hero{
+  width: 100%;
+}
+main{
+  margin-top: 40px;
+}
+.hero-h1{
+  color: #460B60;
+  font-weight: 800;
+  text-shadow: 0 2px 6px rgba(147, 41, 199, 0.25);
+  padding: 10px;
+  margin: 10px;
+}
+
