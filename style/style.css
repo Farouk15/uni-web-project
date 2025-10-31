@@ -76,4 +76,34 @@ main{
   padding: 10px;
   margin: 10px;
 }
+hr{
+  background-color:white;
+  height:2px;
+  width:100%;
+
+}
+footer{
+  height: 10vh;
+
+}
+.Ft-style{
+  display: flex;
+  justify-content: space-around;
+}
+.footer-list {
+  list-style: none;
+}
+.footer-list li a{
+  color: #460B60;
+  font-size: 20px;
+  font-weight: 800;
+
+
+}
+.footer-logo svg{
+  width: 20%;
+}
+.footer-padding{
+  margin-top: 50px;
+}
 
