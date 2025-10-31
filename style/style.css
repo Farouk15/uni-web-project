@@ -38,6 +38,7 @@ nav ul li a {
     list-style: none;
   font-weight: 800;
   font-size: 20px;
+  transition-duration: 0.5s;
 }
 .uni-lo{
     font-size: 53px;
@@ -46,9 +47,11 @@ nav ul li a {
 
 
 }
-nav ul li a :hover{
-        text-decoration: none;
+nav ul li a:hover{
+         text-decoration: none;
     list-style: none;
+    color: #460B60;
+    font-size: 22px;
 }
 .nav-di{
     display: block;
@@ -62,9 +65,24 @@ nav ul li a :hover{
   border-color: #EED7FD;
   background-color: #BC5CF0;
   color: white;
+  transition-duration: 0.5s;
+}
+.btn-style:hover{
+  padding: 10px;
+  width: 100px;
+  padding-inline-start: 10px;
+  border-radius: 5px;
+  border-color: #EED7FD;
+  background-color:#460B60;
+  color: white;
 }
 .img-hero{
   width: 100%;
+  transition-duration: 1s ;
+}
+.img-hero:hover{
+  width: 100%;
+  transform: rotate(45deg);
 }
 main{
   margin-top: 40px;
@@ -97,10 +115,22 @@ footer{
   color: #460B60;
   font-size: 20px;
   font-weight: 800;
+  transition-duration:  0.5s;
 
 
 }
+.footer-list li a:hover{
+  color: #460B60;
+  font-size: 25px;
+  font-weight:900;
+text-decoration: none;
+
+}
 .footer-logo svg{
+  width: 15%;
+  transition-duration: 0.5s;
+}
+.footer-logo svg:hover{
   width: 20%;
 }
 .footer-padding{
