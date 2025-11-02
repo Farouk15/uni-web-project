@@ -266,12 +266,12 @@ text-decoration: none;
 
 }
 
+
 /* Mobile Footer Styles */
 @media (max-width: 768px) {
-  .desktop-footer {
+  .desktop-footer{
     display: none;
   }
-
   .mobile-footer {
     display: flex;
     justify-content: space-between;
