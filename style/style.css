@@ -45,7 +45,6 @@ nav ul li a {
     color: #460B60;
     font-weight: 800;
 
-
 }
 nav ul li a:hover{
          text-decoration: none;
@@ -66,6 +65,7 @@ nav ul li a:hover{
   background-color: #BC5CF0;
   color: white;
   transition-duration: 0.5s;
+
 }
 .btn-style:hover{
   padding: 10px;
@@ -136,4 +136,199 @@ text-decoration: none;
 .footer-padding{
   margin-top: 50px;
 }
+/* .footer-mobile{
+  display: none;
+} */
 
+/* Mobile Sidebar Styles */
+@media (max-width: 768px) {
+.uni-lo{
+    font-size: 23px;
+    color: #460B60;
+    font-weight: 800;
+
+}
+  .footer-logo{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .ul-cls {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #460B60;
+    margin: 5px 0;
+    transition: 0.3s;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #EED7FD;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding: 20px;
+  }
+
+  .sidebar.open {
+    right: 0;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #460B60;
+    cursor: pointer;
+  }
+
+  .sidebar-content {
+    margin-top: 50px;
+  }
+
+  .sidebar-logo {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    color: #460B60;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sidebar-menu li {
+    margin-bottom: 20px;
+  }
+
+  .sidebar-menu li a {
+    color: #460B60;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    transition: 0.3s;
+  }
+
+  .sidebar-menu li a:hover {
+    color: #BC5CF0;
+  }
+
+  .sidebar-btn {
+    margin-top: 30px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+  }
+      /* .footer-desktop{
+    display: none;
+  } */
+}
+
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .mobile-footer {
+    display: none;
+  }
+
+}
+
+/* Mobile Footer Styles */
+@media (max-width: 768px) {
+  .desktop-footer {
+    display: none;
+  }
+
+  .mobile-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .mobile-footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .mobile-footer-left {
+    flex: 1;
+  }
+
+  .mobile-footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 1;
+  }
+
+  .footer-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    text-align: left;
+    
+  }
+
+  .footer-list li {
+    margin-bottom: 10px;
+  }
+
+  .footer-list li a {
+    color: #460B60;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+
+  .footer-logo svg {
+    width: 15%;
+    margin-left: 10px;
+  }
+
+  .footer-logo svg:hover {
+    width: 18%;
+  }
+}
