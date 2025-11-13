@@ -1,9 +1,8 @@
 body{
     margin: 0;
     color: aliceblue;
-    background-color: aliceblue;
+    background-color: #faf6fe;
     padding: 0;
-    background-color: #EED7FD;
     
 }
 .nav-link{
@@ -11,6 +10,17 @@ body{
 }
 h2, p {
   margin: 10px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #EED7FD;
+  z-index: 1000;
+  padding: 10px 0;
+  background-color: #3c0b5d !important;
 }
 
 .ul-cls {
@@ -29,7 +39,7 @@ h2, p {
 
 nav ul li a {
   display: block;
-  color: #460B60;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -42,7 +52,7 @@ nav ul li a {
 }
 .uni-lo{
     font-size: 53px;
-    color: #460B60;
+    color: #ffffff;
     font-weight: 800;
 
 }
@@ -85,7 +95,7 @@ nav ul li a:hover{
   transform: rotate(45deg);
 }
 main{
-  margin-top: 40px;
+  margin-top: 140px;
 }
 .hero-h1{
   color: #460B60;
@@ -144,7 +154,7 @@ text-decoration: none;
 @media (max-width: 768px) {
 .uni-lo{
     font-size: 23px;
-    color: #460B60;
+    color: #ffffff;
     font-weight: 800;
 
 }
@@ -183,7 +193,7 @@ text-decoration: none;
     right: -300px;
     width: 300px;
     height: 100%;
-    background-color: #EED7FD;
+    background-color: #3C0B5D;
     box-shadow: -2px 0 5px rgba(0,0,0,0.5);
     transition: right 0.3s ease;
     z-index: 1000;
@@ -229,7 +239,7 @@ text-decoration: none;
   }
 
   .sidebar-menu li a {
-    color: #460B60;
+    color: #ffffff;
     text-decoration: none;
     font-size: 20px;
     font-weight: 800;
@@ -331,7 +341,9 @@ text-decoration: none;
   .footer-list li {
     margin-bottom: 10px;
   }
-
+  main{
+    margin-top: 0;
+  }
   .footer-list li a {
     color: #460B60;
     text-decoration: none;
@@ -359,6 +371,10 @@ text-decoration: none;
    color: black;
    font-size: 10px;
    text-align: center;
+   
+}
+.img-what1{
+  margin-bottom: 40px;
 }
 }
 .loader {
@@ -402,5 +418,52 @@ text-decoration: none;
   opacity: 70%;
   margin-top: 40px;
 }
+.hero-h3{
+  font-size: 21px;
+  color: #460B60;
+  opacity: 90%;
+}
+strong{
+  color: #b522f4 !important;
+  font-size: 58px;
+}
 
-    
+.hero-button{
+  padding: 10px;
+  width: 30%;
+  padding-inline-start: 10px;
+  border-radius: 5px;
+  border-color: #EED7FD;
+  background-color: #BC5CF0;
+  color: white;
+  font-weight: 700;
+}
+.btn-style :hover{
+  background-color:#3d0057;
+}
+.addidas-img{
+  width: 100%;
+  position: relative;
+}
+.who-shop h2{
+  font-size: 60px;
+  color: #460B60;
+  font-weight: 700;
+  
+}
+.section2{
+  margin-top: 170px;
+}
+.gender-hyber{
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  padding: 10px;
+  width: 30%;
+  padding-inline-start: 10px;
+  border:none ;
+  background-color: #BC5CF0;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
