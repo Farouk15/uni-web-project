@@ -307,6 +307,23 @@ footer .uni-lo{
 
 /* Mobile Footer Styles */
 @media (max-width: 768px) {
+  .head-products h1{
+    margin-top: 30px !important;
+  }
+  .card{
+    margin-top: 40px !important;
+  }
+  .buttons button{
+    width: 100% !important;
+    margin-top: 20px;
+  }
+  .hero-button{
+    width: 50%  !important;
+    margin-top: 20px;
+  }
+  .who-shop h2{
+    font-size: 10px;
+  }
   .desktop-footer{
     display: none;
   }
@@ -455,10 +472,11 @@ strong{
   font-size: 60px;
   color: #460B60;
   font-weight: 700;
+  text-align: left;
   
 }
 .section2{
-  margin-top: 120px;
+  margin-top: 160px;
 }
 .gender-hyber{
   position: absolute;
@@ -498,11 +516,11 @@ strong{
 }
 
 .section_img {
-  background-image: url(https://media.istockphoto.com/id/1408884516/photo/sneakers-concept-with-place-for-text-close-up-of-pink-sneakers-on-a-bright-background-sports.jpg?s=612x612&w=0&k=20&c=1LTDf8Xq9b7wkUvZwFEAmTwUxuP6o5URSGu3YFto5Y0=);
+  background-image: url("../imgs/istockphoto-1408884516-612x612.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 650px;
+  height: 450px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -510,7 +528,7 @@ strong{
   margin-top: 100px;
 }
 
-.container {
+.container3 {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -555,5 +573,73 @@ strong{
   width: 50%;
   background-color: black;
 }
-
-
+.icons-sec2
+{
+  border: 1px;
+  border-color: black;
+}
+.card{
+  border-radius: 10px;
+  
+}
+.card h3 , .card p {
+  color: #460B60;
+}
+.card p{
+  opacity: 80%;
+  font-weight: 700;
+}
+.card div .product-img img {
+  width: 100%;
+}
+.product-img{
+  border-radius:  10px 10px 0 0  ;
+}
+.price-bu{
+  background-color: white ;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.price-bu h4 {
+  color: #460B60;
+  font-weight: 800;
+}
+.price-bu button{
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #b522f4;
+  font-weight: 700;
+  color: white;
+  border:none ;
+}
+.product-name{
+  margin-top: 20px;
+  padding: 30px;
+}
+.product-name h3{
+  font-weight: 700;
+}
+.product-img{
+  position: relative;
+}
+.sale{
+  position: absolute;
+  left: 65%;
+  color: white !important;
+  background-color: #b522f4;
+  width: 25%;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+}
+.head-products{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #3d0057;
+}
+.card-margin{
+  margin-bottom: 40px;
+}
