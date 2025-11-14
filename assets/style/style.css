@@ -56,6 +56,9 @@ nav ul li a {
     font-weight: 800;
 
 }
+footer .uni-lo{
+  color: #460B60 !important;
+}
 nav ul li a:hover{
          text-decoration: none;
     list-style: none;
@@ -157,6 +160,9 @@ text-decoration: none;
     color: #ffffff;
     font-weight: 800;
 
+}
+footer .uni-lo{
+  color: #460B60 !important;
 }
   .footer-logo{
     margin-top: 40px;
@@ -452,7 +458,7 @@ strong{
   
 }
 .section2{
-  margin-top: 170px;
+  margin-top: 120px;
 }
 .gender-hyber{
   position: absolute;
@@ -467,3 +473,87 @@ strong{
   font-weight: 700;
   text-align: center;
 }
+.section_icons{
+  margin-top: 70px;
+}
+.icons_sec svg{
+  width: 20%;
+}
+.icons_sec{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 20px 15px;
+}
+.icon_p{
+  color: #460B60;
+  font-weight: 800;
+}
+.icon_ps{
+  color:#460B60 ;
+  opacity: 70%;
+  font-weight: 500;
+}
+
+.section_img {
+  background-image: url(https://media.istockphoto.com/id/1408884516/photo/sneakers-concept-with-place-for-text-close-up-of-pink-sneakers-on-a-bright-background-sports.jpg?s=612x612&w=0&k=20&c=1LTDf8Xq9b7wkUvZwFEAmTwUxuP6o5URSGu3YFto5Y0=);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 650px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+}
+
+.text-img {
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  padding: 40px;
+  border-radius: 15px;
+  color: #460B60;
+  font-size: 20px;
+}
+.text-img div {
+  margin-top: 10px;
+}
+.text-join{
+  font-size: 30px;
+}
+.old-price{
+  opacity: 60%;
+  text-decoration:line-through;
+  margin-left: 3px;
+}
+.buttons button{
+  padding: 10px;
+  padding-inline-start: 10px;
+  border-radius: 5px;
+  border-color: #EED7FD;
+  color: white;
+}
+.btn-one{
+  background-color: #BC5CF0;
+  width: 30%;
+
+}
+.btn-two{
+  width: 50%;
+  background-color: black;
+}
+
+
