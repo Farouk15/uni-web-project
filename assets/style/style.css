@@ -42,7 +42,6 @@ nav ul li a {
   color: #ffffff;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
   font-family: "Poppins", "Inter", "Helvetica Neue", Arial, sans-serif;
     text-decoration: none;
     list-style: none;
@@ -50,19 +49,27 @@ nav ul li a {
   font-size: 20px;
   transition-duration: 0.5s;
 }
+.active{
+  text-decoration: underline !important;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+  text-decoration-color: #b522f4 !important;
+  text-decoration-thickness: 4px !important;
+}
 .uni-lo{
     font-size: 53px;
     color: #ffffff;
     font-weight: 800;
 
 }
+
 footer .uni-lo{
   color: #460B60 !important;
 }
 nav ul li a:hover{
          text-decoration: none;
     list-style: none;
-    color: #460B60;
+    color: white;
     font-size: 22px;
 }
 .nav-di{
@@ -78,7 +85,8 @@ nav ul li a:hover{
   background-color: #BC5CF0;
   color: white;
   transition-duration: 0.5s;
-
+  border: none;
+  font-weight: 700;
 }
 .btn-style:hover{
   padding: 10px;
@@ -245,6 +253,7 @@ footer .uni-lo{
   }
 
   .sidebar-menu li a {
+    text-align: left;
     color: #ffffff;
     text-decoration: none;
     font-size: 20px;
@@ -278,7 +287,9 @@ footer .uni-lo{
 
   .mobile-footer {
     display: none;
+    background-color:#3d0057 !important ;
   }
+  
 
 }
 .loader {
@@ -312,7 +323,8 @@ footer .uni-lo{
   }
   .card{
     margin-top: 40px !important;
-  }
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
   .buttons button{
     width: 100% !important;
     margin-top: 20px;
@@ -551,6 +563,7 @@ strong{
 }
 .text-join{
   font-size: 30px;
+  font-weight: 800;
 }
 .old-price{
   opacity: 60%;
@@ -567,11 +580,12 @@ strong{
 .btn-one{
   background-color: #BC5CF0;
   width: 30%;
-
+  font-weight: 700;
 }
 .btn-two{
   width: 50%;
-  background-color: black;
+  background-color: #3d0057;
+  font-weight: 500;
 }
 .icons-sec2
 {
@@ -580,7 +594,7 @@ strong{
 }
 .card{
   border-radius: 10px;
-  
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;  
 }
 .card h3 , .card p {
   color: #460B60;
@@ -640,6 +654,19 @@ strong{
   margin-bottom: 20px;
   color: #3d0057;
 }
+.head-products h4{
+  color: #3C0B5D;
+  font-weight: 600;
+  opacity: 70%;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
 .card-margin{
   margin-bottom: 40px;
+}
+.current-price{
+  font-weight: 700;
+}
+.old-price{
+  font-weight: 700;
 }

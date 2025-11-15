@@ -1,0 +1,4 @@
+- [ ] Remove hardcoded 'active' class from Home li in index.html
+- [ ] Add 'products' li to desktop nav in pages/products.html
+- [ ] Add 'products' li to sidebar nav in pages/products.html
+- [ ] Add JavaScript logic to assets/js/script.js to dynamically set 'active' class on current page's li

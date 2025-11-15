@@ -27,6 +27,24 @@ document.addEventListener('DOMContentLoaded', function() {
             closeBtn.style.display = 'block';
         }
     });
+
+    // Function to set active class on current page navigation
+    function setActiveNav() {
+        const currentPath = window.location.pathname.split('/').pop(); // Get the current page filename
+        const navLinks = document.querySelectorAll('.ul-cls a, .sidebar-menu a'); // Select all nav links
+
+        navLinks.forEach(link => {
+            const linkHref = link.getAttribute('href').split('/').pop(); // Get the link's filename
+            if (linkHref === currentPath) {
+                link.parentElement.classList.add('active'); // Add active class to the li
+            } else {
+                link.parentElement.classList.remove('active'); // Remove active class from others
+            }
+        });
+    }
+
+    // Call the function to set active nav on page load
+    setActiveNav();
 });
 
 
