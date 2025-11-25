@@ -1,8 +1,9 @@
-.login{
-    margin-top: 70px;
-    margin-bottom: 70px;
+.login {
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
-/* From Uiverse.io by mrhyddenn */ 
+
+/* From Uiverse.io by mrhyddenn */
 .form__group {
   position: relative;
   padding: 20px 0 0;
@@ -22,6 +23,9 @@
   background: transparent;
   transition: border-color 0.2s;
 }
+
+
+
 
 .form__field::placeholder {
   color: transparent;
@@ -65,70 +69,74 @@
 }
 
 /* reset input */
-.form__field:required, .form__field:invalid {
+.form__field:required,
+.form__field:invalid {
   box-shadow: none;
 }
 
-.login-main{
-    background-color: #a229d6;
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    border-radius: 7px;
-    height: 100%;
-    padding-bottom: 380px;
+.login-main {
+  background-color: #a229d6;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  border-radius: 7px;
+  height: 100%;
+  padding-bottom: 380px;
 }
-.login-main h3 {
-    text-align: center !important;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    font-weight: 800;
-    font-size: 34px;
-}
-.login-form{
-    margin-top: 50px;
-    height: 300px;
-}
-.email-form{
-    display: block;
-    margin-bottom: 30px;
 
+.login-main h3 {
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-weight: 800;
+  font-size: 34px;
+}
+
+.login-form {
+  margin-top: 50px;
+  height: 300px;
+}
+
+.email-form {
+  display: block;
+  margin-bottom: 30px;
 }
 
 /* Media query for responsive design */
 @media (max-width: 768px) {
-    .login {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
+  .login {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 
-    .login-main {
-        width: 100%;
-        margin-top: 100px;
-        height: 100%;
-    }
+  .login-main {
+    width: 100%;
+    margin-top: 100px;
+    height: 100%;
+  }
 
-    .login-main h3 {
-        font-size: 28px;
-        margin-bottom: 30px;
-    }
+  .login-main h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
 
-    .form__group {
-        max-width: 100%;
-    }
+  .form__group {
+    max-width: 100%;
+  }
 
-    .form__field,
-    .form__label {
-        font-size: 15px;
-    }
+  .form__field,
+  .form__label {
+    font-size: 15px;
+  }
 
-    .login-form {
-        margin-top: 30px;
-    }
+  .login-form {
+    margin-top: 30px;
+  }
 }
-/* From Uiverse.io by adamgiebl */ 
-.login-button{
+
+/* From Uiverse.io by adamgiebl */
+.login-button {
   font-family: inherit;
   font-size: 20px;
   background: #510571;
@@ -194,18 +202,21 @@
   font-size: 14px;
   color: #eee;
 }
-.already-acc p{
-  padding-bottom: 80px !important;
 
+.already-acc p {
+  padding-bottom: 80px !important;
 }
+
 .already-acc a {
   color: white;
   text-decoration: none;
   font-weight: 600;
 }
-.already-acc p a :hover{
+
+.already-acc p a :hover {
   font-size: 15px !important;
 }
+
 .already-acc a:hover {
   text-decoration: underline;
 }
