@@ -1,0 +1,33 @@
+Search for ".form__field {" section:
+.form__field {
+  font-family: inherit;
+  width: 200%;
+  border: none;
+  border-bottom: 2px solid white;
+  outline: 0;
+  font-size: 17px;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+Search for ".login-main{" section:
+.login-main{
+    background-color: #a229d6;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border-radius: 7px;
+    height: 100%;
+    padding-bottom: 90px;
+}
+
+Search for media query "@media (max-width: 768px) {" section:
+@media (max-width: 768px) {
+    .login {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .login-main {

@@ -1,152 +1,211 @@
 .login{
-    margin-top: 200px;
-    padding: 0;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+/* From Uiverse.io by mrhyddenn */ 
+.form__group {
+  position: relative;
+  padding: 20px 0 0;
+  width: 100%;
+  max-width: 180px;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid white;
+  outline: 0;
+  font-size: 17px;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 17px;
+  cursor: text;
+  font-weight: 700;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: white;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  font-weight: 800;
+  border-image: linear-gradient(to right, #116399, #b8072a);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #AC51DC;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+.login-main{
+    background-color: #a229d6;
     display: flex;
     justify-content: center;
-    position: relative;
-    height: 600px;
-    right: 5%;
+    width: 50%;
+    border-radius: 7px;
+    height: 100%;
+    padding-bottom: 380px;
 }
-.container-1 {
-    height: 500px;
-    width: 400px;
-    background-color: #d495ee;
-    position: absolute;
-    z-index: 2;
-    border-radius: 10%;
-    
-}
-.signin{
+.login-main h3 {
+    text-align: center !important;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    margin-top: 100px;
+    margin-bottom: 50px;
+    font-weight: 800;
+    font-size: 34px;
 }
-.p-login{
-    font-size: 50px;
-    font-weight: 900;
+.login-form{
+    margin-top: 50px;
+    height: 300px;
 }
-.signin input{
-    width: 80%;
-    border-radius: 20px;
-    border-style: none;
+.email-form{
+    display: block;
+    margin-bottom: 30px;
+
 }
-.btn-signin{
-    border-radius: 10%;
-    border-style: none;
-    width: 100px;
-    height: 50px;
-    background-color: #460B60;
-    color:white;
-    font-weight: 800px;
-    font-size: 20px;
-    margin-top: 10px;
-}
-.container-2 {
-    height: 350px;
-    width: 900px;
-    background-color: #460B60;
-    position: absolute;
-    margin-top: 75px;
-    left: 35%;
-    z-index: 1;
-    border-radius:5%;
-}
-.signup {
-    display: flex;
-    justify-content: end;
-    margin-top:130px ;
-    margin-right: 100px;
-}
-.signflex{
-        display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.p-signup {
-    font-size: 20px;
-}
-.btn-signup {
-    border-radius: 10%;
-    border-style: none;
-    width: 100px;
-    height: 50px;
-    background-color: #d495ee;
-    color:white;
-    font-weight: 800px;
-    font-size: 20px;
-}
+
+/* Media query for responsive design */
 @media (max-width: 768px) {
-
     .login {
-        margin-top: 120px;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        position: relative;
-        height: auto; 
-        flex-direction: column;
-        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
-    .container-1 {
-        height: auto;
-        width: 90%;
-        background-color: #d495ee;
-        border-radius: 10%;
-        position: relative;
-        padding: 20px;
-        z-index: 2;
-    }
-
-    .container-2 {
-        height: auto;
-        width: 60%;
-        background-color: #460B60;
-        border-radius: 5%;
-        margin-top: 20px;
-        padding: 20px;
-
-        position: relative;
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .signup {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .signflex {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+    .login-main {
         width: 100%;
+        margin-top: 100px;
+        height: 100%;
     }
 
-    .p-signup {
-        font-size: 18px;
-        text-align: center;
+    .login-main h3 {
+        font-size: 28px;
+        margin-bottom: 30px;
     }
 
-    .btn-signup {
-        border-radius: 10%;
-        border-style: none;
-        width: 120px;
-        height: 50px;
-        background-color: #d495ee;
-        color: white;
-        font-weight: 800;
-        font-size: 18px;
+    .form__group {
+        max-width: 100%;
     }
+
+    .form__field,
+    .form__label {
+        font-size: 15px;
+    }
+
+    .login-form {
+        margin-top: 30px;
+    }
+}
+/* From Uiverse.io by adamgiebl */ 
+.login-button{
+  font-family: inherit;
+  font-size: 20px;
+  background: #510571;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 2px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-button span {
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+  font-weight: 800;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.login-button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.login-button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.login-button:hover span {
+  transform: translateX(5em);
+}
+
+.login-button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+.already-acc {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #eee;
+}
+.already-acc p{
+  padding-bottom: 80px !important;
+
+}
+.already-acc a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.already-acc p a :hover{
+  font-size: 15px !important;
+}
+.already-acc a:hover {
+  text-decoration: underline;
 }
