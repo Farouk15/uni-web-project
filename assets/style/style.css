@@ -5,6 +5,9 @@ body{
     padding: 0;
     
 }
+a:hover{
+  text-decoration: none;
+}
 .nav-link{
     display: inline;
 }
@@ -166,12 +169,13 @@ text-decoration: none;
 .footer-padding{
   margin-top: 50px;
 }
-/* .footer-mobile{
-  display: none;
-} */
-
-/* Mobile Sidebar Styles */
+.cart-svg{
+  display: none !important;
+}
 @media (max-width: 768px) {
+  .cart-svg{
+    display: block !important;
+  }
 .uni-lo{
     font-size: 23px;
     color: #ffffff;
@@ -191,9 +195,10 @@ footer .uni-lo{
   }
 
   .hamburger {
+    color: white !important;
     display: block;
     position: absolute;
-    top: 20px;
+    top: 2px;
     right: 20px;
     background: none;
     border: none;
@@ -205,7 +210,7 @@ footer .uni-lo{
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #460B60;
+    background-color: white;
     margin: 5px 0;
     transition: 0.3s;
   }
@@ -329,7 +334,7 @@ footer .uni-lo{
 @media (max-width: 768px) {
   #back_to_top{
     width: 16% !important;
-    bottom: 246px !important;
+    /* bottom: 246px !important; */
     /* right: 95px !important; */
     display: block !important;
     position: fixed !important;
@@ -651,6 +656,10 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .product-name h3{
   font-weight: 700;
+}
+.product-name h3:hover{
+  text-decoration: none !important;
+  
 }
 .product-img{
   position: relative;
