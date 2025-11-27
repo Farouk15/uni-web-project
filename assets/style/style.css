@@ -76,7 +76,7 @@ nav ul li a {
 }
 
 footer .uni-lo{
-  color: #460B60 !important;
+  color: white !important;
 }
 nav ul li a:hover{
          text-decoration: none;
@@ -134,7 +134,9 @@ hr{
 
 }
 footer{
-  height: 10vh;
+  height: 45vh;
+  background-color: #460B60;
+  color: white;
   
 }
 .Ft-style{
@@ -145,7 +147,7 @@ footer{
   list-style: none;
 }
 .footer-list li a{
-  color: #460B60;
+  color: white;
   font-size: 20px;
   font-weight: 800;
   transition-duration:  0.5s;
@@ -153,7 +155,7 @@ footer{
 
 }
 .footer-list li a:hover{
-  color: #460B60;
+  color: white;
   font-size: 25px;
   font-weight:900;
 text-decoration: none;
@@ -183,7 +185,7 @@ text-decoration: none;
 
 }
 footer .uni-lo{
-  color: #460B60 !important;
+  color: white !important;
 }
   .footer-logo{
     margin-top: 40px;
@@ -391,6 +393,7 @@ footer .uni-lo{
     list-style: none;
     text-align: right;
     text-align: left;
+    color: white;
     
   }
 
@@ -401,7 +404,7 @@ footer .uni-lo{
     margin-top: 0;
   }
   .footer-list li a {
-    color: #460B60;
+    color: white;
     text-decoration: none;
     font-size: 16px;
     font-weight: 800;
@@ -424,7 +427,7 @@ footer .uni-lo{
   .copyrights  {
   display: flex;
    justify-content: center;
-   color: black;
+   color:white;
    font-size: 10px;
    text-align: center;
    
@@ -469,7 +472,7 @@ footer .uni-lo{
 }
 .copyrights{
   text-align: center;
-  color: #460B60;
+  color:white;
   font-weight: 700;
   opacity: 70%;
   margin-top: 40px;
