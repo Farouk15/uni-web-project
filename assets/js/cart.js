@@ -41,8 +41,11 @@ qtyButtons.forEach(btn => {
         const qtyEl = item.querySelector('.vvvvvvvvvv');
         let qty = parseInt(qtyEl.textContent);
 
+        if(qty < 5){
         if (btn.textContent === '+') qty++;
-        if (btn.textContent === '-' && qty > 1) qty--;
+
+        }
+            if (btn.textContent === '-' && qty > 1) qty--;
 
         qtyEl.textContent = qty;
         updateItemTotal(item);
