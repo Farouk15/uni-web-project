@@ -175,6 +175,9 @@ text-decoration: none;
   display: none !important;
 }
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .cart-svg{
     display: block !important;
   }

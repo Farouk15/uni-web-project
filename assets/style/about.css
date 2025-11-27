@@ -11,8 +11,8 @@
 }
 
 .about-text {
-    padding: 20px;
-    width: 60%;
+    /* padding: 20px;
+    width: 60%; */
 }
 
 .about-title {
@@ -48,6 +48,12 @@
 
 /* Responsive design for mobile devices */
 @media (max-width: 768px) {
+    .about-img{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-right: 50px;
+    }
     .about-section {
         padding: 100px 0 60px;
     }
