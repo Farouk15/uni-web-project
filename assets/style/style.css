@@ -337,9 +337,12 @@ footer .uni-lo{
 
 /* Mobile Footer Styles */
 @media (max-width: 768px) {
+  footer {
+    height: auto;
+  }
   #back_to_top{
     width: 16% !important;
-    /* bottom: 246px !important; */
+    bottom: 100px !important;
     /* right: 95px !important; */
     display: block !important;
     position: fixed !important;
@@ -394,10 +397,9 @@ footer .uni-lo{
     margin: 0;
     padding: 0;
     list-style: none;
-    text-align: right;
     text-align: left;
     color: white;
-    
+
   }
 
   .footer-list li {
