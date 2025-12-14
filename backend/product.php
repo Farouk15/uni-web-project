@@ -1,57 +1,22 @@
-<?php
-if (isset($_GET['show'])) {
+<?php 
 
-    $sql = "SELECT * FROM product";
-    $result = mysqli_query($link, $sql);
-
-    if ($result && mysqli_num_rows($result) > 0) {
-
-        $products = [];
-
-        while ($row = mysqli_fetch_assoc($result)) {
-            $products[] = $row; 
-        }
-
-        echo json_encode([
-            "status" => true,
-            "count" => count($products),
-            "data" => $products
-        ]);
-
-    } else {
-        echo json_encode([
-            "status" => false,
-            "message" => "No data found"
-        ]);
-    }
-} else {
-    echo json_encode([
-        "status" => false,
-        "message" => "Invalid request"
-    ]);
-}
-
+require_once './backend/app.php';
 ///// post method to add products
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $name = isset($_POST['name']) ? $_POST['name'] : null;
-    $name = isset($_POST['category']) ? $_POST['category'] : null;
-
+    $category = isset($_POST['category']) ? $_POST['category'] : null;
     $price = isset($_POST['price']) ? $_POST['price'] : null;
-    $price = isset($_POST['gender']) ? $_POST['gender'] : null;
-    $price = isset($_POST['color']) ? $_POST['color'] : null;
-    $price = isset($_POST['size']) ? $_POST['size'] : null;
-    $price = isset($_POST['quantity']) ? $_POST['quantity'] : null;
-    $price = isset($_POST['description']) ? $_POST['image'] : null;
-
-
-
-
-
+    $gender = isset($_POST['gender']) ? $_POST['gender'] : null;
+    $color = isset($_POST['color']) ? $_POST['color'] : null;
+    $size = isset($_POST['size']) ? $_POST['size'] : null;
+    $quantity = isset($_POST['quantity']) ? $_POST['quantity'] : null;
+    $description = isset($_POST['description']) ? $_POST['image'] : null;
+    $image = isset($_POST['img']) ? $_POST['img'] : null;
     if ($name && $price) {
 
         $stmt = $link->prepare("INSERT INTO product (name, price) VALUES (?, ?)");
-        $stmt->bind_param("ss", $name, $price);
+        $stmt->bind_param( $name, $category ,$price ,$gender ,$color ,$size ,$quantity ,$description ,$image);
 
         if ($stmt->execute()) {
             echo json_encode([
@@ -80,4 +45,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         "message" => "Invalid request method, use POST"
     ]);
 }
+
 ?>
