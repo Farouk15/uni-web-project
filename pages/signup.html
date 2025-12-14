@@ -95,33 +95,33 @@
          justify-content: center;" class="row">
             <div class="login-main">
 
-            <form class="login-form" action="">
+            <form class="login-form" action="../backend/create.php" method="POST">
                     <h3>Sign Up</h3>
                     <!-- From Uiverse.io by mrhyddenn --> 
                     <div class="form__group field" style="margin-bottom: 30px;">
-                        <input type="input" class="form__field" placeholder="email" required="">
+                        <input type="input" class="form__field" name="email" placeholder="email" required="">
                         <label for="email" class="form__label">email</label>
                     </div>
-                                        <div class="form__group field" style="margin-bottom: 30px;">
-                        <input type="input" class="form__field" placeholder="name" required="">
+                    <div class="form__group field" style="margin-bottom: 30px;">
+                        <input type="input" class="form__field" name="username" placeholder="name" required="">
                         <label for="name" class="form__label">Name</label>
                     </div>
-                                        <div class="form__group field" style="margin-bottom: 30px;">
-                        <input type="input" class="form__field" placeholder="number" required="">
+                    <div class="form__group field" style="margin-bottom: 30px;">
+                        <input type="input" class="form__field" name="phone_no" placeholder="number" required="">
                         <label for="number" class="form__label">number</label>
                     </div>
                     <div class="form__group field">
-                        <input type="input" class="form__field" placeholder="password" required="">
+                        <input type="input" class="form__field" name="password" placeholder="password" required="">
                         <label for="password"  class="form__label">password</label>
                     </div>
                     <div style="margin-top: 20px;" class="form__group field">
-                        <input type="input" class="form__field" placeholder="password" required="">
+                        <input type="input" class="form__field" name="confirm_password" placeholder="password" required="">
                         <label for="password"  class="form__label">confirm password</label>
                     </div>
 
                     <div>
                         <!-- From Uiverse.io by adamgiebl --> 
-                        <button class ="login-button">
+                        <button type="submit" name="signup" class ="login-button">
                         <div class="svg-wrapper-1">
                             <div class="svg-wrapper">
                             <svg
