@@ -36,7 +36,18 @@ signupForm.addEventListener('submit', function(e) {
         return;
     }
 
-    alert('Sign Up Successful!');
-    signupForm.reset(); 
+
+    fetch('../backend/create.php', {
+        method: 'POST',
+        body: new FormData(signupForm)
+    })
+    .then(response => response.text())
+    .then(data => {
+        alert(data); 
+        signupForm.reset(); 
+    })
+    .catch(error => {
+        alert('Error: ' + error);
+    });
 });
 
