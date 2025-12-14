@@ -13,7 +13,7 @@ require_once "app.php";
     if(mysqli_query($link, $sql)){
         echo "Signup successful!";
     } else {
-        echo "<p style='color:red;'>Error: " . mysqli_error($link) . "</p>";
+        echo "Error: " ;
     }
 
 
