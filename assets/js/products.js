@@ -39,3 +39,55 @@ if(bestCard){
         saleTag.style.background = 'red'; 
     }
 }
+
+
+const products_fetch = document.getElementById('products_fetch');
+
+fetch("http://localhost/uni-web-project/backend/app.php?show=1").then((data)=>{return data.json()}).then((data)=>{
+    console.log(data.count);
+    console.log(data);
+
+
+    for (var C =0; C < data.count  ; C++ ){
+        
+        products_fetch.innerHTML += `
+                    <div class="col-md-4 py-5" data-aos="fade-up">
+                <a href="./product_d.html">
+                    <div class="card">
+                        <div>
+                            <div class="product-img">
+                                <p class="sale">
+                                    sale
+                                </p>              
+                                <img src="../assets/imgs/HQ8708_00_plp_standard.avif" alt="">
+
+                            </div>
+                            <div class="product-name">
+                                <h3>
+                                    ${data.data[C].name}
+                                </h3>
+                                <p>
+                                    Experience ultimate comfort and style with these iconic Nike Air Max sneakers.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="price-bu">
+                            <h4>
+                            ${data.data[C].price}
+
+                            </h4>
+                            <a href="">
+                                <button>
+                                    Add to cart
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+     `
+ 
+    }
+})
