@@ -1,4 +1,5 @@
 <?php
+
 header("Content-Type: application/json");
 
 define('DB_SERVER', 'localhost');

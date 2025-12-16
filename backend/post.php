@@ -24,7 +24,7 @@ if (isset($_POST['add'])) {
         echo "Error: " . mysqli_error($link);
     }
 
-    header("Location: ../adminpages/admin.html");
+header("Location: ../adminpages/admin.html");
 }
 
 
@@ -40,8 +40,7 @@ if (isset($_POST['delete'])) {
     } else {
         echo "Error: " . mysqli_error($link);
     }
-    header("Location:../adminpages/admin.html");
-    
+header("Location: ../adminpages/admin.html");    
 }
 
 if (isset($_POST['update'])) {
@@ -73,7 +72,7 @@ if (isset($_POST['update'])) {
         echo "Error: " . mysqli_error($link);
     }
 
-    header("Location: ../adminpages/admin.html");
+header("Location: ../adminpages/admin.html");
     exit;
 }
 
