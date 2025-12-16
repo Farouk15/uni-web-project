@@ -1,5 +1,4 @@
-# TODO for Retrieving Products from Database
+# TODO for Fixing Login Functionality
 
-- [x] Fix typos in backend/app.php: Change 'prdocuts' to 'products', $querue to $query, $conn to $link.
-- [x] Update output to display product-relevant fields (id, name, price, description).
-- [x] Test the updated code by accessing the script with the 'show' parameter.
+- [x] Change SQL query in backend/login.php to check 'customer' table instead of 'admin'.
+- [x] Fix alert in assets/js/login.js to display response data instead of undefined 'error'.

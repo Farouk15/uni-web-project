@@ -43,7 +43,7 @@ if(bestCard){
 
 const products_fetch = document.getElementById('products_fetch');
 
-fetch("http://localhost/web%20project/uni-web-project/backend/app.php?show=1").then((data)=>{return data.json()}).then((data)=>{
+fetch("http://localhost/uni-web-project/backend/show.php?show=1").then((data)=>{return data.json()}).then((data)=>{
     console.log(data.count);
     console.log(data);
 

@@ -22,17 +22,24 @@ loginForm.addEventListener('submit', function(e) {
 
 
 
-    fetch('../../backend/login.php', {
-        method: 'POST',
-        body: new FormData(loginForm)
-    })
-    .then(response => response.text()) // ← دي كانت المشكلة
-    .then(data => {
-        alert(data);   // Done أو Try again
-        loginForm.reset();
-    })
-    .catch(err => {
-        alert("Error");
-    });
+fetch('/uni-web-project/backend/login.php', {
+    method: 'POST',
+    body: new FormData(loginForm)
+})
+.then(response => response.text())
+.then(data => {
+
+    if (data.trim() === "Done") {
+        window.location.href = "/uni-web-project/index.html";
+    } else {
+        alert(data);
+    }
+
+    loginForm.reset();
+})
+.catch(err => {
+    alert("Error");
+});
+
 });
 
