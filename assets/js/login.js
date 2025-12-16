@@ -18,7 +18,21 @@ loginForm.addEventListener('submit', function(e) {
         return;
     }
 
-    alert('Login Successful!');
-    loginForm.reset();
+
+
+
+
+    fetch('../../backend/login.php', {
+        method: 'POST',
+        body: new FormData(loginForm)
+    })
+    .then(response => response.text()) // ← دي كانت المشكلة
+    .then(data => {
+        alert(data);   // Done أو Try again
+        loginForm.reset();
+    })
+    .catch(err => {
+        alert("Error");
+    });
 });
 

@@ -1,4 +1,3 @@
-
 const signupForm = document.querySelector('.login-form');
 const inputs = signupForm.querySelectorAll('.form__field');
 
@@ -10,7 +9,7 @@ signupForm.addEventListener('submit', function(e) {
     let password = inputs[3].value.trim();
     let confirmPassword = inputs[4].value.trim();
 
-    
+
     if (!email.includes('@')) {
         alert('Enter a valid email!');
         return;
@@ -47,4 +46,3 @@ signupForm.addEventListener('submit', function(e) {
     })
 
 });
-
