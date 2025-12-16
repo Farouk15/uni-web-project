@@ -41,13 +41,10 @@ signupForm.addEventListener('submit', function(e) {
         method: 'POST',
         body: new FormData(signupForm)
     })
-    .then(response => response.text())
     .then(data => {
         alert(data); 
         signupForm.reset(); 
     })
-    .catch(error => {
-        alert('Error: ' + error);
-    });
+
 });
 

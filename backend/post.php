@@ -43,10 +43,10 @@ if (isset($_POST['delete'])) {
     header("Location:../adminpages/admin.html");
     
 }
-// Update product
+
 if (isset($_POST['update'])) {
 
-    $id       = $_POST['id'];  // Make sure your form has <input name="id">
+    $id       = $_POST['id'];  
     $name     = $_POST['name'];
     $price    = $_POST['price'];
     $category = $_POST['category'];
