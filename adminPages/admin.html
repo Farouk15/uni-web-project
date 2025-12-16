@@ -99,13 +99,14 @@
          justify-content: center;" class="row">
             <div class="login-main" style="margin-bottom: 120px; padding-bottom: 440px;">
 
-                <form class="login-form" action="post">
+                <form class="login-form" method="POST" action="../backend/post.php">
                         <!-- From Uiverse.io by mrhyddenn --> 
                         <div class="form__group field" style="margin-bottom: 30px;">
-                            <input type="input" class="form__field" placeholder="id" required="">
+                            <input type="input" name="id" class="form__field" placeholder="id" >
                             <label for="id" class="form__label">id</label>
                         </div>
                         <div class="form__group field">
+<<<<<<< HEAD
                             <input type="input" class="form__field" placeholder="name" >
                             <label for="name"  class="form__label">name</label>
                         </div>
@@ -127,11 +128,39 @@
                         </div>
                             <div class="form__group field">
                             <input type="input" class="form__field" placeholder="gender">
+=======
+                            <input type="input" name="name" class="form__field" placeholder="name" >
+                            <label for="name"  class="form__label">name</label>
+                        </div>
+                                                <div class="form__group field">
+                            <input type="input" name="category" class="form__field" placeholder="category" >
+                            <label for="category"  class="form__label">category</label>
+                        </div>
+                        <div class="form__group field">
+                            <input type="input" name="price" class="form__field" placeholder="price" >
+                            <label for="price"  class="form__label">price</label>
+                        </div>
+                        <div class="form__group field">
+                            <input type="input" name="quaintiy" class="form__field" placeholder="quaintiy" >
+                            <label for="quaintiy"  class="form__label">quaintiy</label>
+                        </div>
+                        <div class="form__group field">
+                            <input type="input" name="gender" class="form__field" placeholder="gender" >
+                            <label for="gender"  class="form__label">gender</label>
+                        </div>
+                            <div class="form__group field">
+                            <input type="input" name="color" class="form__field" placeholder="gender" >
+>>>>>>> 4c294c64594c5db0edbda23ea7faa5d879592e56
                             <label for="gender"  class="form__label">color</label>
+                        </div>
+                        
+                        <div class="form__group field">
+                            <input type="input" name="description" class="form__field" placeholder="description " >
+                            <label for="description"  class="form__label">description </label>
                         </div>
                         <div>
                             <!-- From Uiverse.io by adamgiebl --> 
-                            <button class ="login-button" type="submit">
+                            <button class ="login-button" name="add" type="submit">
                             <div class="svg-wrapper-1">
                                 <div class="svg-wrapper">
                                 <svg
@@ -150,7 +179,7 @@
                             </div>
                             <span>add </span>
                             </button type="submit">
-                            <button class ="login-button" type="submit">
+                            <button class ="login-button"  name="update">
                             <div class="svg-wrapper-1">
                                 <div class="svg-wrapper">
                                 <svg
@@ -170,7 +199,7 @@
                             <span>update </span>
                             </button>
 
-                            <button class ="login-button">
+                            <button class ="login-button"  name="delete">
                             <div class="svg-wrapper-1">
                                 <div class="svg-wrapper">
                                 <svg
