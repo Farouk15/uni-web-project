@@ -10,7 +10,7 @@ if (isset($_POST['add'])) {
     $color    = $_POST['color'];
     $size     = $_POST['size'];
     $quantity = $_POST['quantity'];
-    $description  = $_POST['description '];
+    $description  = $_POST['description'];
 
 
     $sql = "INSERT INTO product 
