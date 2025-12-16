@@ -94,21 +94,21 @@
          justify-content: center;" class="row">
             <div class="login-main">
 
-                <form class="login-form" action="">
+                <form class="login-form"  action="../backend/login.php" method="POST">
                         <h3>Login</h3>
                         <!-- From Uiverse.io by mrhyddenn --> 
                         <div class="form__group field" style="margin-bottom: 30px;">
-                            <input type="input" class="form__field" placeholder="email" required="">
+                            <input type="input" class="form__field" name="email" placeholder="email" required="">
                             <label for="email" class="form__label">email</label>
                         </div>
                         <div class="form__group field">
-                            <input type="input" class="form__field" placeholder="password" required="">
+                            <input type="input" class="form__field" name="password" placeholder="password" required="">
                             <label for="password"  class="form__label">password</label>
                         </div>
 
                         <div>
                             <!-- From Uiverse.io by adamgiebl --> 
-                            <button class ="login-button">
+                            <button class ="login-button" type="submit">
                             <div class="svg-wrapper-1">
                                 <div class="svg-wrapper">
                                 <svg
