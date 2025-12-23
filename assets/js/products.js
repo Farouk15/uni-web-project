@@ -49,7 +49,7 @@ fetch("http://localhost/uni-web-project/backend/show.php?show=1").then((data)=>{
 
 
     for (var C =0; C < data.count  ; C++ ){
-        
+
         products_fetch.innerHTML += `
                     <div class="col-md-4 py-5" data-aos="fade-up">
                 <a href="./product_d.html">
@@ -58,7 +58,7 @@ fetch("http://localhost/uni-web-project/backend/show.php?show=1").then((data)=>{
                             <div class="product-img">
                                 <p class="sale">
                                     sale
-                                </p>              
+                                </p>
                                 <img src="../assets/imgs/HQ8708_00_plp_standard.avif" alt="">
 
                             </div>
@@ -72,22 +72,53 @@ fetch("http://localhost/uni-web-project/backend/show.php?show=1").then((data)=>{
                             </div>
 
                         </div>
-                        <div class="price-bu">
-                            <h4>
-                            ${data.data[C].price}
-
-                            </h4>
-                            <a href="">
-                                <button>
-                                    Add to cart
-                                </button>
-                            </a>
-                        </div>
                     </div>
                 </a>
+                <div class="price-bu">
+                    <h4>
+                    ${data.data[C].price}
+
+                    </h4>
+                    <button data-product-id="${data.data[C].id}" class="add-to-cart-btn">
+                        Add to cart
+                    </button>
+                </div>
 
             </div>
      `
- 
+
     }
+
+    // Now add event listeners after buttons are created
+    const addButtons = document.querySelectorAll('.price-bu button');
+
+    addButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const productId = btn.getAttribute('data-product-id');
+            const userId = localStorage.getItem('user_id');
+            if (!userId) {
+                alert('Please log in to add items to cart.');
+                return;
+            }
+            fetch('../backend/cart.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `add_cart=1&product_id=${productId}&user_id=${userId}&quantity=1`
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status) {
+                    alert(data.message);
+                } else { 
+                    alert('Error: ' + data.error);
+                }
+            })
+            .catch(err => {
+                alert('Error adding to cart: ' + err.message);
+            });
+        });
+    });
 })

@@ -26,19 +26,19 @@ fetch('/uni-web-project/backend/login.php', {
     method: 'POST',
     body: new FormData(loginForm)
 })
-.then(response => response.text())
+.then(response => response.json())
 .then(data => {
-
-    if (data.trim() === "Done") {
+    if (data.success) {
+        localStorage.setItem('user_id', data.user_id);
         window.location.href = "/uni-web-project/index.html";
     } else {
-        alert(data);
+        alert(data.message);
     }
 
     loginForm.reset();
 })
 .catch(err => {
-    alert("Error");
+    alert("Error: " + err.message);
 });
 
 });
